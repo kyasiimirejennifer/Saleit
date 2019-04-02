@@ -14,10 +14,17 @@
     android:title="Adverts"
     app:showAsAction="never"
     />
+    <item
+        android:id="@+id/Help"
+        android:title="Help"
+        app:showAsAction="never"
+        />
 
     <item
         android:id="@+id/settings"
         android:title="Settings"
         app:showAsAction="never"
         />
+
+
 </menu>

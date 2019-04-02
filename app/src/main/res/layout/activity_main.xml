@@ -73,4 +73,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/sale" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/fragment_container"
+        >
+    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>

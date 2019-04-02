@@ -1,6 +1,7 @@
 package com.example.jenny;
 
 import android.content.Intent;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -36,32 +37,37 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch(item.getItemId())
-        {
+        switch (item.getItemId()) {
             case R.id.advert:
-                Intent intent = new Intent(getApplicationContext(),Music.class);
+                Intent intent = new Intent(getApplicationContext(), Music.class);
                 startActivity(intent);
                 return true;
 
             case R.id.pictures:
-                Intent m = new Intent(getApplicationContext(),Pictures.class);
+                Intent m = new Intent(getApplicationContext(), Pictures.class);
                 startActivity(m);
 
                 return true;
 
             case R.id.settings:
-                Intent n = new Intent(MainActivity.this,Settings.class);
+                Intent n = new Intent(MainActivity.this, Settings.class);
                 startActivity(n);
-
                 return true;
 
-                default:
-                    return super.onOptionsItemSelected(item);
+            case R.id.Help:
+                setFragment(new Help());
+
+
+            default:
+
+                return super.onOptionsItemSelected(item);
 
         }
 
 
+    }
+    void setFragment(Fragment fragment){
 
-
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,fragment).commit();
     }
 }

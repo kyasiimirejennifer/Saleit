@@ -10,20 +10,26 @@
         android:id="@+id/videoView"
         android:layout_width="278dp"
         android:layout_height="277dp"
+        android:layout_marginStart="66dp"
         android:layout_marginTop="76dp"
-        android:onClick="play"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        tools:layout_editor_absoluteX="66dp" />
+        android:layout_marginEnd="67dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="234dp"
-        android:layout_height="22dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="88dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="89dp"
         android:layout_marginBottom="76dp"
         android:text="Some of the adverts"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/videoView"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="88dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
